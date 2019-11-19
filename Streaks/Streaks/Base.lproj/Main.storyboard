@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,33 +12,43 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Streaks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBm-sI-J7Z" userLabel="SecondButton">
-                                <rect key="frame" x="121.5" y="471.5" width="132" height="30"/>
-                                <state key="normal" title="Sign in with Google"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="5gy-w8-QSZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBm-sI-J7Z" userLabel="SecondButton">
+                                <rect key="frame" x="64.5" y="492.5" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Google" backgroundImage="Google">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZN-KU-3tM" userLabel="ThirdButton">
-                                <rect key="frame" x="127.5" y="511.5" width="120" height="30"/>
-                                <state key="normal" title="Sign in with Email"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZN-KU-3tM" userLabel="ThirdButton">
+                                <rect key="frame" x="64.5" y="571.5" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Email" backgroundImage="Email">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGq-eZ-toZ">
-                                <rect key="frame" x="85.5" y="164.5" width="204" height="21"/>
+                                <rect key="frame" x="105" y="372.5" width="204" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streaks Prototype" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb9-kR-RsD">
-                                <rect key="frame" x="117" y="52.5" width="141.5" height="82"/>
+                                <rect key="frame" x="136.5" y="260.5" width="141.5" height="82"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lar-1M-nNg" userLabel="FirstButton">
-                                <rect key="frame" x="59.5" y="205.5" width="256" height="256"/>
-                                <state key="normal" backgroundImage="Facebook">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lar-1M-nNg" userLabel="FirstButton">
+                                <rect key="frame" x="64.5" y="413.5" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Facebook" backgroundImage="FB">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                             </button>
                         </subviews>
@@ -47,6 +57,7 @@
                             <constraint firstItem="eZN-KU-3tM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="76t-yE-1RV"/>
                             <constraint firstItem="lar-1M-nNg" firstAttribute="top" secondItem="BGq-eZ-toZ" secondAttribute="bottom" constant="20" id="77a-TS-zbe"/>
                             <constraint firstItem="lar-1M-nNg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BdK-YL-572"/>
+                            <constraint firstItem="5gy-w8-QSZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DGu-Ix-QZS"/>
                             <constraint firstItem="BGq-eZ-toZ" firstAttribute="top" secondItem="tb9-kR-RsD" secondAttribute="bottom" constant="30" id="GcR-X9-rfB"/>
                             <constraint firstItem="zBm-sI-J7Z" firstAttribute="top" secondItem="lar-1M-nNg" secondAttribute="bottom" constant="10" id="PcJ-b8-Fn1"/>
                             <constraint firstItem="lar-1M-nNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S6d-af-Tpq"/>
@@ -54,6 +65,9 @@
                             <constraint firstItem="eZN-KU-3tM" firstAttribute="top" secondItem="zBm-sI-J7Z" secondAttribute="bottom" constant="10" id="TPX-i2-6Mm"/>
                             <constraint firstItem="tb9-kR-RsD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZTB-Zl-5jy"/>
                             <constraint firstItem="zBm-sI-J7Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bYv-2h-eIV"/>
+                            <constraint firstAttribute="trailing" secondItem="5gy-w8-QSZ" secondAttribute="trailing" id="k4G-Wf-I5j"/>
+                            <constraint firstAttribute="bottom" secondItem="5gy-w8-QSZ" secondAttribute="bottom" id="n7v-B2-u8h"/>
+                            <constraint firstItem="5gy-w8-QSZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oee-oY-Hy2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -64,6 +78,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Facebook" width="256" height="256"/>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
     </resources>
 </document>
