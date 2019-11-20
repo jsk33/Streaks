@@ -15,59 +15,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="5gy-w8-QSZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoolBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Ofr-bh-RC6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBm-sI-J7Z" userLabel="SecondButton">
-                                <rect key="frame" x="64.5" y="492.5" width="285" height="69"/>
-                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Sign in with Google" backgroundImage="Google">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZN-KU-3tM" userLabel="ThirdButton">
-                                <rect key="frame" x="64.5" y="571.5" width="285" height="69"/>
-                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Sign in with Email" backgroundImage="Email">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGq-eZ-toZ">
-                                <rect key="frame" x="105" y="372.5" width="204" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ejz-s5-Ydz">
+                                <rect key="frame" x="64.5" y="295" width="285" height="306"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in or create account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klx-2A-Fdi">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="69"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySJ-LS-CF3">
+                                        <rect key="frame" x="0.0" y="79" width="285" height="69"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Log in with Facebook" backgroundImage="FB">
+                                            <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZA-VS-wVj">
+                                        <rect key="frame" x="0.0" y="158" width="285" height="69"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Log in with Google" backgroundImage="Google">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvI-IX-4LZ">
+                                        <rect key="frame" x="0.0" y="237" width="285" height="69"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Log in with Email" backgroundImage="Email">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streaks Prototype" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="390-QG-scU">
+                                <rect key="frame" x="129.5" y="171" width="155.5" height="84"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streaks Prototype" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb9-kR-RsD">
-                                <rect key="frame" x="136.5" y="260.5" width="141.5" height="82"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lar-1M-nNg" userLabel="FirstButton">
-                                <rect key="frame" x="64.5" y="413.5" width="285" height="69"/>
-                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Sign in with Facebook" backgroundImage="FB">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="eZN-KU-3tM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="76t-yE-1RV"/>
-                            <constraint firstItem="lar-1M-nNg" firstAttribute="top" secondItem="BGq-eZ-toZ" secondAttribute="bottom" constant="20" id="77a-TS-zbe"/>
-                            <constraint firstItem="lar-1M-nNg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BdK-YL-572"/>
-                            <constraint firstItem="5gy-w8-QSZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DGu-Ix-QZS"/>
-                            <constraint firstItem="BGq-eZ-toZ" firstAttribute="top" secondItem="tb9-kR-RsD" secondAttribute="bottom" constant="30" id="GcR-X9-rfB"/>
-                            <constraint firstItem="zBm-sI-J7Z" firstAttribute="top" secondItem="lar-1M-nNg" secondAttribute="bottom" constant="10" id="PcJ-b8-Fn1"/>
-                            <constraint firstItem="lar-1M-nNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S6d-af-Tpq"/>
-                            <constraint firstItem="BGq-eZ-toZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Syb-n6-4Pe"/>
-                            <constraint firstItem="eZN-KU-3tM" firstAttribute="top" secondItem="zBm-sI-J7Z" secondAttribute="bottom" constant="10" id="TPX-i2-6Mm"/>
-                            <constraint firstItem="tb9-kR-RsD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZTB-Zl-5jy"/>
-                            <constraint firstItem="zBm-sI-J7Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bYv-2h-eIV"/>
-                            <constraint firstAttribute="trailing" secondItem="5gy-w8-QSZ" secondAttribute="trailing" id="k4G-Wf-I5j"/>
-                            <constraint firstAttribute="bottom" secondItem="5gy-w8-QSZ" secondAttribute="bottom" id="n7v-B2-u8h"/>
-                            <constraint firstItem="5gy-w8-QSZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oee-oY-Hy2"/>
+                            <constraint firstItem="Ofr-bh-RC6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="42V-DQ-aEk"/>
+                            <constraint firstItem="Ofr-bh-RC6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Bn-5r-8Pu"/>
+                            <constraint firstItem="Ejz-s5-Ydz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hpn-vg-fKi"/>
+                            <constraint firstAttribute="trailing" secondItem="Ofr-bh-RC6" secondAttribute="trailing" id="Jz4-mR-OML"/>
+                            <constraint firstItem="Ejz-s5-Ydz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aIO-Ab-0KW"/>
+                            <constraint firstItem="Ejz-s5-Ydz" firstAttribute="top" secondItem="390-QG-scU" secondAttribute="bottom" constant="40" id="bkT-Tb-M4I"/>
+                            <constraint firstItem="390-QG-scU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e07-qH-TOm"/>
+                            <constraint firstAttribute="bottom" secondItem="Ofr-bh-RC6" secondAttribute="bottom" id="y8V-fa-8da"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -78,7 +77,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="414" height="896"/>
+        <image name="CoolBackground" width="980" height="2016"/>
         <image name="Email" width="285" height="69"/>
         <image name="FB" width="285" height="69"/>
         <image name="Google" width="285" height="69"/>
