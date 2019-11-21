@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoolBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Ofr-bh-RC6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ofr-bh-RC6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ejz-s5-Ydz">
@@ -77,7 +77,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CoolBackground" width="980" height="2016"/>
+        <image name="Background-1" width="414" height="896"/>
         <image name="Email" width="285" height="69"/>
         <image name="FB" width="285" height="69"/>
         <image name="Google" width="285" height="69"/>
