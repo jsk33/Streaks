@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		961F4676238CC00A00956D0E /* SwiftLesson1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftLesson1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		96C0D4C8237E50A7001775BC /* Streaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C0D4CB237E50A7001775BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96C0D4CD237E50A7001775BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		96C0D4BF237E50A7001775BC = {
 			isa = PBXGroup;
 			children = (
+				961F4676238CC00A00956D0E /* SwiftLesson1.playground */,
 				96C0D4CA237E50A7001775BC /* Streaks */,
 				96C0D4E1237E50AC001775BC /* StreaksTests */,
 				96C0D4EC237E50AC001775BC /* StreaksUITests */,
