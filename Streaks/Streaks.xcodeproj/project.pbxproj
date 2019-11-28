@@ -37,6 +37,7 @@
 /* Begin PBXFileReference section */
 		961F4676238CC00A00956D0E /* SwiftLesson1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftLesson1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		967FEB76238E1A760087C22D /* SwiftLesson2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftLesson2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		96B6C53E238F74FE00879641 /* SwiftLesson3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftLesson3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		96C0D4C8237E50A7001775BC /* Streaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C0D4CB237E50A7001775BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96C0D4CD237E50A7001775BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		96C0D4BF237E50A7001775BC = {
 			isa = PBXGroup;
 			children = (
+				96B6C53E238F74FE00879641 /* SwiftLesson3.playground */,
 				967FEB76238E1A760087C22D /* SwiftLesson2.playground */,
 				961F4676238CC00A00956D0E /* SwiftLesson1.playground */,
 				96C0D4CA237E50A7001775BC /* Streaks */,
