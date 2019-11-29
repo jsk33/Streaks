@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Streaks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-1" translatesAutoresizingMaskIntoConstraints="NO" id="EZp-Sx-p3U">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Tr2-77-sl7">
-                                <rect key="frame" x="223" y="10" width="122" height="55"/>
+                                <rect key="frame" x="146" y="54" width="122" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Rzm-2Y-rob"/>
                                 </constraints>
@@ -35,7 +35,7 @@
                                 </variation>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-XP-bAT" userLabel="Cards and Button Stackview">
-                                <rect key="frame" x="149" y="79.5" width="270" height="221"/>
+                                <rect key="frame" x="72" y="352.5" width="270" height="231"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KEO-Oh-zAX" userLabel="Cards Stackview">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="170"/>
@@ -49,14 +49,17 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vQ-4T-Gna" userLabel="Deal Button">
-                                        <rect key="frame" x="94" y="190" width="82" height="31"/>
+                                        <rect key="frame" x="94" y="200" width="82" height="31"/>
                                         <state key="normal" image="dealbutton"/>
+                                        <connections>
+                                            <action selector="dealTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tnF-bq-mMt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="heightClass=compact-widthClass=compact" spacing="20"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uvw-zq-zIf" userLabel="Player Score Stackview">
-                                <rect key="frame" x="20" y="231.5" width="47" height="68.5"/>
+                                <rect key="frame" x="20" y="773.5" width="47" height="68.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1D-2y-56H">
                                         <rect key="frame" x="0.0" y="0.0" width="47" height="20.5"/>
@@ -73,7 +76,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nfX-4i-H0o" userLabel="CPU Score Stackview">
-                                <rect key="frame" x="513.5" y="231.5" width="34.5" height="68.5"/>
+                                <rect key="frame" x="359.5" y="773.5" width="34.5" height="68.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgu-uA-GLg">
                                         <rect key="frame" x="0.0" y="0.0" width="34.5" height="20.5"/>
@@ -109,6 +112,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="leftImageView" destination="HyO-z3-K0c" id="3Vk-aJ-uhW"/>
+                        <outlet property="leftScoreLabel" destination="jo5-eM-a6m" id="RUW-56-kLq"/>
+                        <outlet property="rightImageView" destination="Mbi-PN-Ooi" id="cne-q6-YTi"/>
+                        <outlet property="rightScoreLabel" destination="jIp-fV-0py" id="cDK-v9-hx1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
