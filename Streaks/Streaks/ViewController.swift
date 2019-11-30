@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var rightScoreLabel: UILabel!
     
+    var leftScore = 0
+    var rightScore = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,12 +34,24 @@ class ViewController: UIViewController {
     // this function is connected to an event triggered by an object in the storyboard
     // the sender parameter is a reference to the button that triggered this event
     @IBAction func dealTapped(_ sender: Any) {
-        
+        // randomize numbers for cards
         let leftNumber = Int.random(in: 2...14)
         let rightNumber = Int.random(in: 2...14)
         
+        // set the images based on the generated random numbers
         leftImageView.image = UIImage(named: "card\(leftNumber)")
         rightImageView.image = UIImage(named: "card\(rightNumber)")
+        
+        // logic for scorekeeping
+        if leftNumber > rightNumber {
+            leftScore += 1
+            leftScoreLabel.text = String(leftScore)
+        } else if rightNumber > leftNumber {
+            rightScore += 1
+            rightScoreLabel.text = String(rightScore)
+        } else {
+            // tie
+        }
     }
     
 }
