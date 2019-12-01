@@ -14,16 +14,17 @@ class ViewController: UIViewController {
     // we now have a reference to the image object
     // we can call methods on it, configure its properties, etc. inside the view controller here
     @IBOutlet weak var leftImageView: UIImageView!
-    
     @IBOutlet weak var rightImageView: UIImageView!
-    
     @IBOutlet weak var leftScoreLabel: UILabel!
-    
     @IBOutlet weak var rightScoreLabel: UILabel!
     
     var leftScore = 0
     var rightScore = 0
     
+    
+    @IBOutlet weak var buildAppLabel: UILabel!
+    var buildAppCount = 15
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -52,6 +53,13 @@ class ViewController: UIViewController {
         } else {
             // tie
         }
+    }
+    
+    
+    @IBAction func BuildAppTapped(_ sender: Any) {
+        buildAppCount += 1
+        buildAppLabel.text = String(buildAppCount)
+        
     }
     
 }
