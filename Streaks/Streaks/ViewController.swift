@@ -23,12 +23,13 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var buildAppLabel: UILabel!
-    var buildAppCount = 15
+    var buildAppCount = 0
+    let persist = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        buildAppCount = persist.integer(forKey: "persistKey")
     }
     
     
@@ -59,7 +60,7 @@ class ViewController: UIViewController {
     @IBAction func BuildAppTapped(_ sender: Any) {
         buildAppCount += 1
         buildAppLabel.text = String(buildAppCount)
-        
+        persist.set(buildAppCount, forKey: "persistKey")
     }
     
 }
