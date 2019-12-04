@@ -25,7 +25,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var buildAppLabel: UILabel!
     var buildAppCount = 0
     let persist = UserDefaults.standard
-
+    
+    @IBOutlet weak var StepperOutlet: UIStepper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -64,5 +66,8 @@ class ViewController: UIViewController {
         persist.set(buildAppCount, forKey: "persistKey")
     }
     
+    @IBAction func Stepper(_ sender: Any) {
+        
+    }
 }
 
