@@ -22,22 +22,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="84X-81-ru1" userLabel="First Item Stack View">
-                                <rect key="frame" x="124" y="210" width="166.5" height="36"/>
+                                <rect key="frame" x="72.5" y="210" width="269" height="32"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMH-0I-XVe">
-                                        <rect key="frame" x="0.0" y="0.0" width="118" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="32"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Build this app"/>
                                         <connections>
-                                            <action selector="BuildAppTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="059-wz-Udh"/>
+                                            <action selector="buildAppLongPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tvi-Ik-w9Q"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fha-zb-rKb">
-                                        <rect key="frame" x="138" y="0.0" width="28.5" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fha-zb-rKb">
+                                        <rect key="frame" x="138" y="0.0" width="17" height="32"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Oc9-jw-8Or">
+                                        <rect key="frame" x="175" y="0.0" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="Stepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="bpd-by-vU7"/>
+                                        </connections>
+                                    </stepper>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -52,6 +59,7 @@
                     </view>
                     <connections>
                         <outlet property="buildAppLabel" destination="fha-zb-rKb" id="WE5-78-nmV"/>
+                        <outlet property="buildAppStepper" destination="Oc9-jw-8Or" id="0n2-Cg-j69"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
