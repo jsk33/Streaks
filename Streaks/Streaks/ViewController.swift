@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     
     // this function is connected to an event triggered by an object in the storyboard
-    // the sender parameter is a reference to the button that triggered this event
+    // the sender parameter is a reference to the UI element that triggered this event
     @IBAction func Stepper(_ sender: UIStepper) {
         buildAppNumber.text = String(sender.value)
         buildAppPersistantData.set(sender.value, forKey: "persistKey")
@@ -42,5 +42,14 @@ class ViewController: UIViewController {
             buildAppPersistantData.set(buildAppCount, forKey: "persistKey")
         }
     }
+    
+    
+    @IBAction func AddItem(_ sender: UIButton) {
+        // pop-up to create a new stack view (button, label, stepper)
+        // pop-up has input area for button name
+        // pop-up has confirm button to add the new item to the item list stack view
+    }
+    
+    
 }
 

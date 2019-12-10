@@ -21,42 +21,93 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="84X-81-ru1" userLabel="First Item Stack View">
-                                <rect key="frame" x="67" y="210" width="280" height="32"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Gj6-vc-Kw3" userLabel="Item List Stack View">
+                                <rect key="frame" x="67" y="240" width="280" height="94"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtL-aQ-ud8">
-                                        <rect key="frame" x="0.0" y="0.0" width="129" height="32"/>
-                                        <gestureRecognizers/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title="Build this app"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="84X-81-ru1" userLabel="First Item Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtL-aQ-ud8">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="32"/>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <state key="normal" title="Build this app"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="nBq-69-dXP" appends="YES" id="dpL-rh-8bs"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fha-zb-rKb">
+                                                <rect key="frame" x="149" y="0.0" width="17" height="32"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Oc9-jw-8Or">
+                                                <rect key="frame" x="186" y="0.0" width="94" height="32"/>
+                                                <connections>
+                                                    <action selector="Stepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="bpd-by-vU7"/>
+                                                </connections>
+                                            </stepper>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fHl-Cr-X0m" userLabel="Second Item Stack View">
+                                        <rect key="frame" x="43" y="62" width="237" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIU-EY-XeA">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <state key="normal" title="LeetCode"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0c-WH-zZN">
+                                                <rect key="frame" x="110" y="0.0" width="17" height="32"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="OFa-Kd-h36">
+                                                <rect key="frame" x="143" y="0.0" width="94" height="32"/>
+                                            </stepper>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="u2X-k3-pVG">
+                                <rect key="frame" x="110.5" y="721" width="193" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9n-jg-zWI">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="nBq-69-dXP" appends="YES" id="dpL-rh-8bs"/>
+                                            <action selector="AddItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="49n-T2-16n"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fha-zb-rKb">
-                                        <rect key="frame" x="149" y="0.0" width="17" height="32"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a61-H1-Mqy">
+                                        <rect key="frame" x="98" y="0.0" width="95" height="42"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Oc9-jw-8Or">
-                                        <rect key="frame" x="186" y="0.0" width="94" height="32"/>
-                                        <connections>
-                                            <action selector="Stepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="bpd-by-vU7"/>
-                                        </connections>
-                                    </stepper>
+                                        <state key="normal" title="Remove">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="Gj6-vc-Kw3" firstAttribute="top" secondItem="ia9-Y9-4Ar" secondAttribute="bottom" constant="60" id="7aQ-Un-l3i"/>
                             <constraint firstItem="ia9-Y9-4Ar" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Q4x-O5-2zp"/>
-                            <constraint firstItem="84X-81-ru1" firstAttribute="top" secondItem="ia9-Y9-4Ar" secondAttribute="bottom" constant="30" id="Vb6-lM-VEU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u2X-k3-pVG" secondAttribute="bottom" constant="50" id="Svn-tY-kYz"/>
                             <constraint firstItem="ia9-Y9-4Ar" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VcG-4r-XE0"/>
-                            <constraint firstItem="84X-81-ru1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oaJ-ll-1yQ"/>
+                            <constraint firstItem="Gj6-vc-Kw3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sMu-yr-vId"/>
+                            <constraint firstItem="u2X-k3-pVG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sdA-Jy-u3o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="buildAppButton" destination="BtL-aQ-ud8" id="wFs-HQ-Df0"/>
                         <outlet property="buildAppNumber" destination="fha-zb-rKb" id="WE5-78-nmV"/>
@@ -67,7 +118,6 @@
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="nBq-69-dXP">
                     <connections>
                         <action selector="buildAppLongPress:" destination="BYZ-38-t0r" id="U7M-S3-Od4"/>
-                        <outlet property="delegate" destination="BtL-aQ-ud8" id="HkF-j0-ruB"/>
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
